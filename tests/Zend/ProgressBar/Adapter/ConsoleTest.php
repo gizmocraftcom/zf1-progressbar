@@ -20,6 +20,8 @@
  * @version    $Id$
  */
 
+use PHPUnit\Framework\Attributes\Group;
+
 require_once __DIR__ . '/MockupStream.php';
 
 /**
@@ -28,8 +30,8 @@ require_once __DIR__ . '/MockupStream.php';
  * @subpackage UnitTests
  * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
  * @license    http://framework.zend.com/license/new-bsd     New BSD License
- * @group      Zend_ProgressBar
  */
+#[Group('Zend_ProgressBar')]
 class Zend_ProgressBar_Adapter_ConsoleTest extends PHPUnit\Framework\TestCase
 {
     protected function setUp(): void
